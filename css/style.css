@@ -1,0 +1,453 @@
+/*variaveis globais*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	height: 100%;
+	min-width: 350px;
+}
+
+.clear{
+	clear: both;
+}
+
+.w50{
+	width: 50% !important;
+	margin: 0 5px !important;
+}
+
+.w100{
+	width: 100% !important;
+}
+
+.flex{
+	display: flex;
+}
+
+/*Tela login*/
+
+section.logar, section.rec-senha{
+	min-height: 100vh;
+	padding: 0 2%;
+	background-image: url(../images/fundo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.logar > .container{
+	padding-top: 20vh;
+	text-align: center;
+}
+
+section.logar > .container h2{
+	color: white;
+	font-size: 30px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+section.logar > .container form{
+	border: 1px solid #fff;
+	padding: 20px;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+
+.input-field{
+	margin: 0 auto;
+	width: 70%;
+	
+}
+
+.input-field input{
+	color: #eee !important;
+	padding-left: 8px !important;
+	border-bottom: 1px solid white !important;
+	background-color: transparent !important;
+}
+
+.input-field label{
+	color: white !important;
+}
+
+.input-field label:focus {
+	color: white !important;
+}
+
+.input-field input:focus {
+	border-bottom: 1px solid white !important;
+	background-color: transparent !important;
+}
+
+
+.btn-wrapper{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn-wrapper input{
+	display: inline-block !important;
+	text-align: center !important;
+}
+
+.recuperar-senha{
+	width: 100%;
+	color: white;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.recuperar-senha a{
+	color: white;
+}
+
+/*Recuperar-senha*/
+
+section.rec-senha{
+	padding-top: 10vh;
+}
+
+.wrapper-rec-senha{
+	border: 1px solid #fff;
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+.wrapper-rec-senha h2{
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.btn-voltar{
+	margin-top: 20px;
+}
+
+.btn-voltar a{
+	color: white;
+	font-style: none;
+}
+
+/*home*/
+
+header{
+	width: 100%;
+	min-height: 10vh;
+	background-color: #01579b;
+	padding: 0 2%;
+	position: relative;
+}
+
+header img{
+	width: 150px;
+	left: 2%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+header .pesquisa input{
+	width: 40% !important;
+	height: 5vh !important;
+	position: absolute !important;
+	top: 50% !important;
+	transform: translate(-50%,-50%) !important;
+	left: 50% !important;
+	outline: none !important;
+	border-radius: 8px !important;
+	border: none !important;
+	font-size: 16px !important;
+	padding-left: 8px !important;
+	line-height: 5vh !important;
+	background-color: #fff !important;
+}
+
+header .pesquisa img{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	margin-left: 5px;
+	left: calc(50% + 20% + 5px);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+header .perfil-wrapper{
+	color: white;
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+header .menu-perfil{
+	width: 120px;
+	color: white;
+	background-color: #039be5;
+	position: absolute;
+	top: 9vh;
+	right: 2%;
+	border: 0;
+	border-radius: 0 0 8px 8px;
+	display: none;
+}
+
+
+
+header .menu-perfil ul{
+	list-style: none;
+}
+
+header .menu-perfil ul a{
+	text-decoration: none;
+}
+
+header .menu-perfil ul  li{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding: 5px;
+}
+
+header .menu-perfil ul  li:hover{
+	background-color: #81d4fa;
+	border-radius: 0 0 8px 8px;
+}
+.sessao-corpo{
+	display: flex;
+}
+
+.side-bar{
+	width: 20%;
+	background-color: #039be5;
+	min-height: 90vh;
+}
+
+.side-bar .modulos-wrapper{
+
+}
+
+.modulos-wrapper .modulos-single{
+	font-size: 20px;
+	text-align: left;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.modulos-wrapper .modulos-single p{
+	display: inline-block;	
+}
+
+.modulos-wrapper .modulos-single img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.modulos-wrapper ul{
+	display: none;
+}
+
+.modulos-wrapper ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+
+.modulos-wrapper ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.corpo-home{
+	width: 80%;
+	padding: 10px;
+	background-color: #eee;
+}
+
+.conteudo-principal{
+	width: 100%;
+	background-color: white;
+}
+
+/*cadastrar-usuario*/
+
+.cadastrar-usuario .container{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+}
+
+.cadastrar-usuario .container form{
+	width: 70%;
+	margin: 20px auto;
+	padding: 40px;
+	border: 2px solid #039be5;
+	border-radius: 8px; 
+}
+
+.cadastrar-usuario form label{
+	display: inline-block;
+	font-size: 18px;
+	color: #039be5;
+}
+
+.cadastrar-usuario form .wraper-form{
+	display: inline-block;
+}
+
+.wraper-form select{
+	display: inline-block !important;
+	margin: 20px auto;
+	color: #039be5;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid #999;
+}
+
+/*media screen*/
+
+@media screen and (max-width: 1250px){
+
+	section.logar > .container{
+		padding-top: 10vh;
+	}
+
+	section.logar > .container form{
+		padding: 20px;
+		width: 80%;
+	}
+
+	.modulos-wrapper .modulos-single{
+		font-size: 18px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 950px){
+
+	section.logar{
+		padding: 5vh 2% 0 2%;
+	}
+
+	.input-field{
+		width: 90%;
+	}
+
+	.side-bar{
+		width: 60px;
+		height: auto;
+		min-height: 90vh;
+	}
+
+	.corpo-home{
+		width: calc(100% - 60px);
+		height: auto;
+		min-height: 70vh;
+	}
+
+	.modulos-wrapper .modulos-single p{
+		display: none;
+	}
+
+	.modulos-wrapper .modulos-single img{
+		width: 32px;
+		height: 32px;
+	}
+
+	.modulos-wrapper ul li a{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 750px){
+
+	.form-wrapper{
+		width: 80%;
+	}
+
+	header .pesquisa{
+		display: none;
+	}
+
+	.wrapper-rec-senha{
+		width: 90%;
+	}
+
+	.flex{
+		flex-direction: column;
+	}
+
+	.w50{
+		width: 100% !important;
+		padding: 0;
+	}
+
+	.cadastrar-usuario .container form{
+		width: 98%;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	.wraper-form input{
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.form-wrapper{
+		width: 100%;
+	}
+}
+
+
+.btnSubmit{
+    max-width: 100px;
+    width:100%;
+    padding:5px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #ee457d;
+    border:none;
+    margin:10px;
+    color:#FFF;
+    cursor: pointer;
+    outline:none;
+}
+
+.btnSubmit:hover{
+    background-color: #ee8d45;
+}
+
+
+/*Redefinir Senha */
+
+.dvRedefinirSenha{
+    width: 500px;
+    height: auto;
+    margin-top: 150px;
+    border:3px solid royalblue;
+    border-radius:3px;
+    background-color: #FFF;
+    padding:10px;
+}
